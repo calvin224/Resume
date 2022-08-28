@@ -10,7 +10,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #696969;
+    --clr-light: #D3D3D3;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
     
@@ -336,13 +336,14 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
 .portfolio__img {
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
+    border-radius: 30px;
+    transition:
+        transform 750ms cubic-bezier(.5, .5, .5, .5),
         opacity 250ms linear;
 }
 
@@ -353,7 +354,7 @@ header {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
+    transform: scale(1.01);
     opacity: .5;
 }
 
